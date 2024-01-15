@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+<script>
+    /*
+    let age=parseInt(prompt("나이를 입력해주세요"));
+    function sayHi(age){
+
+        if (age<10){
+            console.log("부럽다");
+        }else if (age<18){
+            console.log("안녕! 반가워 꼬마친구!");
+        }else{
+            console.log("안녕하세요!");
+        }
+
+    }
+    function printGrade(){
+        let score = parseInt(prompt("성적을 입력해주세요"));
+        let grade = (score>=90)?'A':((score>=80)?'B':((score>=70)?'C':((score>=60)?'D':'강해져서 돌아와라')))
+        console.log(grade);
+        switch(true){
+            case score>=90:
+                document.write(`<p>A</p>`);
+                break;
+            case score>=80:
+                document.write(`<p>B</p>`);
+                break;
+            case score>=70:
+                document.write(`<p>C</p>`);
+                break;
+            case score>=60:
+                document.write(`<p>D</p>`);
+                break;
+            default:
+                document.write(`<p>강해져서 돌아와라</p>`)
+        }
+    }
+    sayHi(age);
+    printGrade();  */
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Flat", "Audi"];
+
+    let text = "";
+    for(let i=0;i<cars.length;i++){
+        text+='<section><h2>'+cars[i]+'</h2></section>';
+    }
+    document.body.innerHTML=text;
+    for(let i=1;i<10;i++){
+        document.write(`<p>5 X ${i} = ${5*i}</p>`)
+    }
+    let num=1;
+    while(num<10){
+        num++;
+        if(num===2) {
+            num--;
+            console.log(num);
+            num++;
+            console.log(num);
+            continue;
+        }
+
+        if(num===4){
+            continue;
+        }
+        if(num===7) {
+            continue;
+        }
+        console.log(num);
+    }
+</script>
+</body>
+</html>

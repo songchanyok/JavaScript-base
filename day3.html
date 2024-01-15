@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>day3</title>
+</head>
+<body>
+<script>
+    // splice 문제
+    const fish = ['정어리', '고등어', '돌고래', '참치', '고래상어', '코끼리'];
+    // 1. splice 를 이용해 코끼리를 제거해보세요
+    // 2. 참치 다음에 다금바리를 추가해보세요
+    // 3. 돌고래를 제거하고 옥돔과 갈치를 추가해보세요
+    fish.splice(5,1) //[정어리,고등어,돌고래,참치,고래상어]
+    fish.splice(4,0,"다금바리") //[정어리,고등어,돌고래,참치,다금바리,고래상어]
+    fish.splice(2,1,"옥돔","갈치")//[정어리,고등어,옥돔,갈치,참치,다금바리,고래상어
+
+    function Factory(name,life,weight){
+        this.name=name;
+        this.life=life;
+        this.weight=weight;
+    }
+    Factory.prototype.canEat=function(){
+        console.log(`${this.name}님이 먹습니다.`);
+        this.canSleep();
+    }
+    Factory.prototype.canSleep=function(){console.log(`${this.name}님이 먹고 자고있습니다.`);}
+
+    Factory.prototype.drinking=function(Sojus){Sojus.down();
+                                                            Sojus.up();
+                                                        };
+
+    const Soju={
+        weight:60,
+        max:100,
+        down(){this.max--},
+        up(){this.weight++}
+    }
+    let robot1=new Factory('andrew',100,70);
+    robot1.drinking(Soju);
+    console.log(Soju);
+</script>
+</body>
+</html>
