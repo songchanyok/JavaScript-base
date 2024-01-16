@@ -1,0 +1,197 @@
+body{
+    background-color: #5B2386;
+    margin:0;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:736px;
+
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:127px;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+p{
+    margin:0;
+    color:#FFFFFF;
+    font-family:GmarketSansMedium;
+}
+a{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header>img:nth-child(1){
+    position:absolute;
+    top:120px;
+    width:261px;
+
+
+
+}
+header>img:nth-child(2){
+    position:absolute;
+    top:194px;
+    width:529px;
+
+
+
+    /*align-items: start;*/
+}
+@font-face {
+    font-family: tvN_Enjoystories;
+    src: url('tvNEnjoystoriesMedium.ttf') format('truetype');
+}
+
+header>p:nth-child(3){
+    position:absolute;
+    top:431px;
+    font-family: tvN_Enjoystories;
+    color:#F5DF4D;
+    font-size:36px;
+    font-weight: 700;
+
+}
+header>div{
+    position:absolute;
+    top:562px;
+    display:flex;
+    justify-content: space-between;
+    width:493px;
+}
+header>div>img{
+    width:46px;
+    height:96px;
+}
+header>div>p{
+    margin-bottom:24px;
+    text-align:center;
+}
+
+main p{
+    font-size: 24px;
+    text-align:center;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main input{
+    width:228px;
+    height: 57px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+main form label{
+    width:1px;
+    height: 1px;
+    margin:0;
+    clip-path: inset(50%);
+    overflow: hidden;
+    display: inline-block;
+}
+main input::placeholder{
+    text-align: center;
+    font-size: 24px;
+    color: #BABCBE;
+
+}
+main button{
+    width:565px;
+    height:66px;
+    border-radius: 56px;
+    padding: 21px 49px;
+    background-color: #FCEE21;
+    font-family: GmarketSansMedium;
+    font-size: 23px;
+    line-height: 24px;
+    font-weight:700;
+    border:none;
+    box-sizing: border-box;
+    margin-top:115px;
+}
+main img{
+    position: relative;
+    top:-52px;
+    left:321px;
+}
+
+
+.timeResult{
+
+    display: none;
+}
+.timeResult a:nth-of-type(1){
+    width: 356px;
+    height: 66px;
+    margin-top: 127px;
+    /*left: 678px*/
+    padding: 21px 49px;
+    border-radius: 56px;
+    background-color: #FCEE21;
+    font-family: GmarketSansMedium;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 24px;
+    text-align: center;
+    display:inline-block;
+}
+.timeResult a:nth-of-type(2){
+    width: 191px;
+    height:66px;
+    background-color: #FFFFFF;
+    border-radius: 56px;
+    padding: 21px 49px;
+    position: relative;
+    display:inline-block;
+    left:18px;
+    font-family: GmarketSansMedium;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.timeResult p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.timeResult span{
+    font-size: 72px;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.copyright p{
+    margin-top: 20px;
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.38px;
+    text-align: center;
+}
+.copyright img{
+    position: relative;
+    transform: translate(-50%);
+    left:50%
+}
